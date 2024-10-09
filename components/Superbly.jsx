@@ -3,7 +3,7 @@ import Image from 'next/image'
 export default function(){
     return(
         
-    <div className="bg-white flex gap-[30px] px-20 py-4">
+    <div className="bg-white flex gap-[30px] px-4 sm:px-20 py-4">
     <div className="bg-black flex flex-col gap-[50px] justify-between p-5 w-full lg:w-1/3 rounded-lg">
       <div className="text-white flex flex-col gap-2 ">
         <h1 className="font-bold text-4xl">920<span className="text-lime-300">+</span></h1>

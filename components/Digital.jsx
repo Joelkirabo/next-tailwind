@@ -3,8 +3,8 @@
 
 export default function Digital(){
     return(
-        <div className="flex flex-col md:flex-row gap-10 py-8 px-20">
-        <div className="w-full md:w-1/2 font-bold text-4xl">
+        <div className="flex flex-col md:flex-row gap-10 py-8 px-4 sm:px-20">
+        <div className="w-full md:w-1/2 font-bold text-2xl sm:text-4xl">
             Digital marketing & SEO services that grow traffic & increase revenue
         </div>
         <div className="w-full md:w-1/2">

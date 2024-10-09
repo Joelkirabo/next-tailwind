@@ -3,9 +3,9 @@ import Link from 'next/link'
 
 export default function Subhero(){
     return(
-        <div className="bg-white flex flex-col lg:flex-row gap-[100px] px-20 py-4">{/*sub hero section */}
+        <div className="bg-white flex flex-col lg:flex-row gap-[100px] px-4 sm:px-20 py-4">{/*sub hero section */}
       <div className="w-full lg:w-1/2 flex flex-col justify-between gap-10">{/*left*/}
-        <div className=" flex gap-20">
+        <div className=" flex gap-20 justify-center">
           <button className="bg-black text-white rounded-full py-1 px-5">Schedule Call</button>
           <Link href="/" className="underline font-bold decoration-gray-500">View Case Study</Link>
         </div>

@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function Faq(){
     return(
-        <div className="flex flex-col md:flex-row gap-5 px-20 py-8 bg-white rounded-lg m-4">{/*FAQ*/}
+        <div className="flex flex-col md:flex-row gap-5 px-4 sm:px-20 py-8 bg-white rounded-lg m-4">{/*FAQ*/}
         <div className="w-full md:w-1/2 flex flex-col gap-5">
           <h1 className="text-2xl font-bold">Digital Marketing FAQs</h1>
           <p className="text-gray-500">They thoroughly analyze our industry and target audience, allowing them to develop customized campaigns that effectively reach and engage our customers. their creative ideas and cutting edge techniques have helped us stayh ahad of the competition</p>

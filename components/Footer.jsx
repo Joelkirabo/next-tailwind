@@ -20,9 +20,9 @@ export default function Footer(){
             <table className="min-w-full table-auto">
               <thead>
                 <tr>
-                  <th className="text-left font-bold pb-6 pr-20">Navigation</th>
-                  <th className="text-left font-bold pb-6 pr-20">License</th>
-                  <th className="text-left font-bold pb-6">Contact</th>
+                  <th className="text-left font-bold pb-6 pr-4 sm:pr-20">Navigation</th>
+                  <th className="text-left font-bold pb-6 pr-4 sm:pr-20">License</th>
+                  <th className="text-left font-bold pb-6 pr-4 sm:pr-20">Contact</th>
                 </tr>
               </thead>
               <tbody>

@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function Ceo(){
     return(
-        <div className="px-20 py-4">
+        <div className="px-4 sm:px-20 py-4">
         <p className="font-bold text-lg tracking-wide pb-4">"They thoroughly analyze our industry and target audience, allowing them to develop customized campaigns that effectively reach and engage our customers. their creative ideas and cutting edge techniques have helped us stayh ahad of the competition"</p>
         <div className="flex flex-col gap-5 sm:flex-row justify-between items-between">
           <div className="flex justify-center items-center gap-5">
