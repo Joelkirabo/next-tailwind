@@ -72,7 +72,7 @@ export default function Pricing(){
                     {
                         packs.map((pack)=>{
                             return(
-                                <div key={pack.id} className={` ${pack.title===popular?"bg-slate-700 flex justify-center flex-col text-white border border-slate-700 rounded-lg p-6  shadow-lg shadow-slate-500 relative":"relative  shadow-lg shadow-slate-500 flex justify-center flex-col text-white border border-slate-700 rounded-lg p-6"} `}>
+                                <div key={pack.id} className={` ${pack.title===popular?"bg-slate-700 flex justify-center flex-col text-white border border-slate-700 rounded-lg p-8  shadow-lg shadow-slate-500 relative":"relative  shadow-lg shadow-slate-500 flex justify-center flex-col text-white border border-slate-700 rounded-lg p-6"} `}>
                                     <div className="h-10 w-10 rounded-full bg-slate-800 border border-slate-600 self-center absolute top-[-20px] flex justify-center items-center"><FaCircle className={`   ${pack.title===popular?"text-lg text-yellow-500 font-bold ":"text-lg text-green-500 font-bold"}` }/></div>
                                     <div className='flex justify-center flex-col gap-5  pb-5 border-b border-slate-600'>
                                 <span className={ `${pack.title===popular?'mx-auto border title font-bold border-green-300 py-0.5 px-2 rounded-full tracking-wider shadow-md shadow-yellow-300':'shadow-md shadow-green-300 mx-auto border text-green-500 font-bold border-green-300 py-0.5 px-2 rounded-full tracking-wider'}`}>{pack.title}</span>
