@@ -8,7 +8,7 @@ const linkarr = [
     {id:2, href:"/agency", title:"Agency"},
     {id:3, href:"/pricing", title:"Pricing"},
     {id:4, href:"/resources", title:"Resources"},
-    {id:5, href:"/contact", title:"Contact"}
+    {id:5, href:"/blog", title:"Blog"}
 ]
 
 export default function Header(){

@@ -7,6 +7,7 @@
     @apply underline underline-offset-8 decoration-lime-300 decoration-4;
 }
 
-.showans{
-    @apply block;
+
+.title{
+    @apply text-yellow-400
 }

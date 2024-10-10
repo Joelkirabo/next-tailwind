@@ -1,4 +1,5 @@
 'use client'
+import {FaCheck} from 'react-icons/fa'
 
 import { useState } from "react"
 
@@ -10,76 +11,93 @@ export default function Casestudy(){
         },
         {
             id: 2,
-            periodshown:'yearly'
+            periodshown:'annually'
         },
     ]
 
     const packs = [
+
         {
             id:1,
-            title:'basic package',
-            price: 100,
+            title:'CORE',
+            price: 19,
+            tagname: 'Best for solo creators',
             features:[
-                "1tb cloud storage","24/7 team support"
+               "100MB Cloud storage","100+ prompt templates","5 projects", "24/7 support"
             ]
         },
         {
             id:2,
-            title:'medium',
-            price: 200,
+            title:'OVERDRIVE',
+            price: 79,
+            tagname: 'Most popular plan',
             features:[
-                "10tb cloud storage","24/7 customer service"
+               "All Starter features","1TB addititional storage","unlimited projects", "Analytics"
             ]
         },
         {
             id:3,
-            title:'pro package',
-            price: 500,
+            title:'TEAM',
+            price: 39,
+            tagname: 'Exclusively for teams',
             features:[
-                "all features"
+               "All Overdrive features","10TB additional storage","50% off per member", "Real-time collaboration"
             ]
         },
+      
     ]
 
     const [period, setPeriod] = useState('monthly');
 
+    const popular = "OVERDRIVE";
+
     console.log(period)
     return(
-        <div className="bg-slate-500 w-screen h-auto py-16 px-20">
-            <div className="rounded-lg bg-slate-600 p-8" >
-                <h1 className="text-white mx-auto w-[70%] flex justify-center">pricings</h1>
-                <div className="text-white flex justify-between gap-5 border border-white rounded-lg w-[200px] mx-auto my-5">
+        <div className="bg-slate-500 w-screen h-auto py-10 px-10">
+            <div className="rounded-lg bg-slate-800 p-8" >
+                <h1 className="text-white mx-auto w-[70%] font-bold text-3xl text-center tracking-wider">Flexible pricings <br></br> for teams of all sizes</h1>
+                <div className="text-white bg-slate-800 flex justify-between  border border-slate-600 rounded-lg w-[200px] mx-auto p-0.5 my-5">
                     {
                         buttons.map((button)=>{
                             return(
-                                <button key={button.id} onClick={()=>setPeriod(button.periodshown)} className={` ${period===button.periodshown?"bg-slate-700 w-1/2 rounded-lg":"bg-slate-600 w-1/2 rounded-lg"} `} >{button.periodshown}</button>
+                                <button key={button.id} onClick={()=>setPeriod(button.periodshown)} className={` ${period===button.periodshown?"bg-blue-950 w-1/2 font-bold  border border-blue-900 uppercase text-[10px] px-3 py-2 rounded-lg ":"bg-slate-800 uppercase font-bold text-[10px] w-1/2 rounded-lg"} `} >{button.periodshown}</button>
                             )
                         })
                     }
                     
                 </div>
 
-                <div className="flex justify-center flex-wrap gap-5">
+                <div className="flex justify-center flex-wrap">
 
                     {
                         packs.map((pack)=>{
                             return(
-                                <div key={pack.id} className={` ${pack.title==='medium'?"bg-slate-900 flex justify-center flex-col text-white border border-white rounded-lg p-6":"flex justify-center flex-col text-white border border-white rounded-lg p-6"} `}>
-                                <h1 className="mx-auto">{pack.title}</h1>
-                                <p className="mx-auto flex item-start"><span className="font-bold text-4xl">${pack.price}</span>/month</p>
-                                <div>
+                                <div key={pack.id} className={` ${pack.title===popular?"bg-slate-700 flex justify-center flex-col text-white border border-slate-700 rounded-lg p-6":"flex justify-center flex-col text-white border border-slate-700 rounded-lg p-6"} `}>
+                                    <div className='flex justify-center flex-col gap-5  pb-5 border-b border-slate-600'>
+                                <span className={ `${pack.title===popular?'mx-auto border title font-bold border-green-300 py-0.5 px-2 rounded-full tracking-wider':'mx-auto border text-green-500 font-bold border-green-300 py-0.5 px-2 rounded-full tracking-wider'}`}>{pack.title}</span>
+                                <p className="mx-auto flex item-start text-xs  font-bold tracking-wider"><span className={` ${pack.title===popular?"font-bold title text-4xl":"font-bold text-4xl"}`}>${pack.price}</span>/MO</p>
+                                <p className='text-center font-bold'>{pack.tagname}</p>
+                                   </div>
+
+
+
+                                <div className='py-4'>
                                     <ul>
                                         {
                                             pack.features.map((feature,i)=>{
                                                 return(
-                                                    <li key={i}>
-                                                        {feature}
+                                                    <li key={i} className='flex justify-start items-center gap-3 mb-3'>
+
+                                                        <FaCheck className=' rounded-full p-0.5 bg-blue-500 text-slate-800 text-xs' /> {feature}
                                                     </li>
                                                 )
                                             })
                                         }
                                        
                                     </ul>
+                                </div>
+                                <div className=' flex justify-center'> 
+                                <button className='bg-blue-950 w-1/2 font-bold  border border-blue-900 uppercase text-[10px] px-3 py-2 rounded-lg'>GET STARTED</button>
                                 </div>
                             </div>
                             )
