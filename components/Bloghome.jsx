@@ -4,7 +4,7 @@ import Blog from "./Blog"
 import useFetch from "./useFetch"
 
 export default function Bloghome(){
-    const {data:blogs, isLoading, error}= useFetch('https://github.com/Joelkirabo/next-tailwind/blob/main/data/db.json') 
+    const {data:blogs, isLoading, error}= useFetch('data/db.json') 
    
     return (
         <div className="p-4">
