@@ -1,0 +1,34 @@
+{
+    "blogs":[
+        {
+            "title":"News in uganda today",
+            "body":"uganda cranes won yesterday at namboole stadium",
+            "author":"Joel K",
+            "id":1
+        },
+        {
+            "title":"News in uganda today",
+            "body":"uganda cranes won yesterday at namboole stadium",
+            "author":"elvis a",
+            "id":2
+        },
+        {
+            "title":"News in uganda today",
+            "body":"uganda cranes won yesterday at namboole stadium",
+            "author":"sheila",
+            "id":3
+        },
+        {
+            "title":"News in uganda today",
+            "body":"uganda cranes won yesterday at namboole stadium",
+            "author":"sheila",
+            "id":4
+        },    
+        {
+            "title":"News in uganda today",
+            "body":"uganda cranes won yesterday at namboole stadium",
+            "author":"sheila",
+            "id":5
+        }  
+    ]
+}

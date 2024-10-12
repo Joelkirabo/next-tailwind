@@ -25,7 +25,7 @@ export default function Header(){
             <div className="flex justify-center items-center h-[50px] w-[50px] bg-gradient-to-r rounded-br-full from-lime-300 to-lime-300">
             <div className="h-[20px] w-[20px] bg-black rounded-br-full"></div>
                 </div>    
-            <Link href="/" className="font-bold text-[30px] text-black">boostim</Link>
+            <Link href="/" className="font-bold text-[15px] sm:text-[30px] text-black">boostim</Link>
             </div>
             <div className="hidden md:flex gap-10 p-2 font-bold text-gray-900">                
         {
@@ -38,8 +38,8 @@ export default function Header(){
             </div>
             </div>
             <div className="flex gap-[5px] justify-center items-center">
-                <button className="border border-black py-1 px-5 rounded-full">Get started</button>
-                <button className="text-white bg-black w-9 h-9 rounded-full">B</button>
+                <button className="border border-black text-xs sm:text-sm py-0.5 px-1.5 rounded-full">Get started</button>
+                <button className="text-white bg-black w-7 h-7 rounded-full">B</button>
             </div>
         </div>
     )

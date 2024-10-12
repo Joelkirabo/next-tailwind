@@ -8,7 +8,7 @@ import  Bloghome from '@/components/Bloghome'
 export default function Blog(){
 
     return(
-        <div className='px-20'>
+        <div className='px-5'>
             <Navbar />
             <Bloghome />
         </div>
