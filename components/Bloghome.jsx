@@ -4,7 +4,7 @@ import Blog from "./Blog"
 import useFetch from "./useFetch"
 
 export default function Bloghome(){
-    const {data:blogs, isLoading, error}= useFetch('data/db.json') 
+    const {data:blogs, isLoading, error}= useFetch('http://localhost:8000/blogs') 
    
     return (
         <div className="p-4">
